@@ -1,0 +1,18 @@
+{
+  "name": "zanges/visual_feedback_theme",
+  "description": "Visual feedback theme plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "VisualFeedbackTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "VisualFeedbackTheme\\VisualFeedbackTheme",
+    "label": {
+      "de-DE": "Theme VisualFeedbackTheme plugin",
+      "en-GB": "Theme VisualFeedbackTheme plugin"
+    }
+  }
+}
