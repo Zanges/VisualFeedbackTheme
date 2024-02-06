@@ -46,6 +46,6 @@ export default class VisualFeedback extends AddToCard {
       if (quantityClassAdded) {
         this._quantityInputEl.classList.remove('quantity-selector-group-visual-feedback');
       }
-    }, 1000);
+    }, 10000);
   }
 }

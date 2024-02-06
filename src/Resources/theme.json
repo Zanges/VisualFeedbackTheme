@@ -19,5 +19,55 @@
   "asset": [
     "@Storefront",
     "app/storefront/src/assets"
-  ]
+  ],
+  "config": {
+    "blocks": {
+      "visualFeedbackSettings": {
+        "label": {
+          "en-GB": "Visual Feedback Settings",
+          "de-DE": "Visuelles Feedback Einstellungen"
+        }
+      }
+    },
+    "sections": {
+    },
+    "fields": {
+      "visual-feedback-button-background-color": {
+        "label": {
+          "en-GB": "Feedback Background Color",
+          "de-DE": "Feedback Hintergrundfarbe"
+        },
+        "type": "color",
+        "value": "#888888",
+        "block": "visualFeedbackSettings"
+      },
+      "visual-feedback-button-text-color": {
+        "label": {
+          "en-GB": "Feedback Text Color",
+          "de-DE": "Feedback Textfarbe"
+        },
+        "type": "color",
+        "value": "#ffffff",
+        "block": "visualFeedbackSettings"
+      },
+      "visual-feedback-quantity-border-use-primary-color": {
+        "label": {
+          "en-GB": "Use Primary Color for Quantity Border",
+          "de-DE": "Primärfarbe für Stückzahlrahmen verwenden"
+        },
+        "type": "boolean",
+        "value": true,
+        "block": "visualFeedbackSettings"
+      },
+      "visual-feedback-quantity-border-color": {
+        "label": {
+          "en-GB": "Quantity Border Color",
+          "de-DE": "Stückzahlrahmenfarbe"
+        },
+        "type": "color",
+        "value": "#888888",
+        "block": "visualFeedbackSettings"
+      }
+    }
+  }
 }
