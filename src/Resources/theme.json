@@ -9,7 +9,8 @@
   "style": [
     "app/storefront/src/scss/overrides.scss",
     "@Storefront",
-    "app/storefront/src/scss/base.scss"
+    "app/storefront/src/scss/base.scss",
+    "app/storefront/src/scss/visual-feedback.scss"
   ],
   "script": [
     "@Storefront",
