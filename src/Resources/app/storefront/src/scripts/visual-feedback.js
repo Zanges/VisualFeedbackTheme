@@ -30,10 +30,17 @@ export default class VisualFeedback extends AddToCard {
   }
 
   _visualFeedback() {
-    console.log('snippet:', this);
+    const feedbackLabel = this._buyButtonEl.getAttribute('data-feedback-label');
+    const defaultLabel = this._buyButtonEl.getAttribute('data-add-to-cart-label');
+
+    console.log(feedbackLabel, defaultLabel);
 
     this._buyButtonEl.disabled = true;
     this._buyButtonEl.classList.add('btn-buy-visual-feedback');
+
+    if (feedbackLabel) {
+      this._buyButtonEl.textContent = feedbackLabel;
+    }
 
     let quantityClassAdded = false;
     if (this._quantityInputEl) {
@@ -44,10 +51,14 @@ export default class VisualFeedback extends AddToCard {
     window.setTimeout(() => {
       this._buyButtonEl.disabled = false;
       this._buyButtonEl.classList.remove('btn-buy-visual-feedback');
+      
+      if (defaultLabel) {
+        this._buyButtonEl.textContent = defaultLabel;
+      }
 
       if (quantityClassAdded) {
         this._quantityInputEl.classList.remove('quantity-selector-group-visual-feedback');
       }
-    }, 10000);
+    }, 3000);
   }
 }
