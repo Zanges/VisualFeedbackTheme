@@ -1,10 +1,12 @@
 .btn-buy-visual-feedback, .btn-buy-visual-feedback:disabled {
   background-color: $visual-feedback-button-background-color;
+  // allows shopadmin to set the text color while the button is styled, for good contrast
   color: $visual-feedback-button-text-color;
 }
 
 .quantity-selector-group-visual-feedback {
-  @if visual-feedback-quantity-border-use-primary-color == true {
+  // allows shopadmin to set the border color to the primary color or a custom color in the theme settings
+  @if visual-feedback-quantity-border-use-primary-color == true { 
     border: 1px solid $sw-color-brand-primary;
   } @else {
     border: 1px solid $visual-feedback-quantity-border-color;
