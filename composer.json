@@ -3,6 +3,11 @@
   "description": "Visual feedback theme plugin",
   "type": "shopware-platform-plugin",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Zanges"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "VisualFeedbackTheme\\": "src/"

@@ -30,6 +30,8 @@ export default class VisualFeedback extends AddToCard {
   }
 
   _visualFeedback() {
+    console.log('snippet:', this);
+
     this._buyButtonEl.disabled = true;
     this._buyButtonEl.classList.add('btn-buy-visual-feedback');
 
